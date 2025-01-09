@@ -8,6 +8,10 @@ Analysis of Instacart's online grocery shopping dataset to understand customer b
 - `scripts/`
   - `data_loading.py`: Scripts for loading data into PostgreSQL
   - `analysis.sql`: SQL queries for data analysis
+ 
+## Data Source
+This project uses data from the Instacart Market Basket Analysis Competition on Kaggle.
+- `Sata Source`: https://www.kaggle.com/competitions/instacart-market-basket-analysis/data
 
 ## Dataset Description
 The analysis uses the Instacart dataset (~30M rows) with the following structure:
