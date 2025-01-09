@@ -30,9 +30,9 @@ Contains all orders with their attributes:
 Specifies which products were purchased in each order:
 - `order_id`: order identifier
 - `product_id`: product identifier
-- `add_to_cart_order`: sequence of items added to cart
+- `add_to_cart_order`: sitems added to cart
 - `reordered`: indicates if the product has been ordered by this user before
-Note: order_products__prior.csv contains previous order contents for all customers
+- Note: order_products__prior.csv contains previous order contents for all customers
 
 #### `products.csv`
 Contains product information:
