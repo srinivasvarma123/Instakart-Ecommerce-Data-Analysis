@@ -1,5 +1,4 @@
--- Create a temporary table that joins the orders, order_products, and products tables to get information about each order, 
--- including the products that were purchased and their department and aisle information.
+# Create a temporary table that joins the orders, order_products, and products tables to get information about each order, including the products that were purchased and their department and aisle information.
 CREATE TEMP TABLE order_info AS(
 	SELECT 
 		o.order_id, o.order_number, o.order_dow, o.order_hour_of_day, o.days_since_prior_order , 
