@@ -1,4 +1,4 @@
-# Create a temporary table that joins the orders, order_products, and products tables to get information about each order, including the products that were purchased and their department and aisle information.
+-- Create a temporary table that joins the orders, order_products, and products tables to get information about each order, including the products that were purchased and their department and aisle information.
 CREATE TEMP TABLE order_info AS(
 	SELECT 
 		o.order_id, o.order_number, o.order_dow, o.order_hour_of_day, o.days_since_prior_order , 
@@ -12,7 +12,7 @@ CREATE TEMP TABLE order_info AS(
 SELECT * 
 FROM order_info
 
--- 	Create a temporary table that groups the orders by product and finds the total number of times each product was purchased, 
+-- Create a temporary table that groups the orders by product and finds the total number of times each product was purchased, 
 -- the total number of times each product was reordered, and the average number of times each product was added to a cart.
 CREATE TEMP TABLE product_purchase AS(
 	SELECT product_id, product_name, COUNT(product_id) AS total_orders, COUNT(CASE WHEN reordered= 1 THEN 1 ELSE 0 END) AS total_reorders, ROUND(AVG(add_to_cart_order),2) AS avg_add_to_cart
@@ -22,7 +22,6 @@ CREATE TEMP TABLE product_purchase AS(
 
 SELECT *
 FROM product_purchase
-
 
 
 -- Create a temporary table that groups the orders by department and finds the total number of products purchased, the total number 
